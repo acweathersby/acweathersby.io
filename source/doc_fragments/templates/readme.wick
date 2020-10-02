@@ -1,0 +1,33 @@
+/**[PAGE]:readme [FRAGMENTS]:readme */
+import { frags, obj as pkg } from "@model";
+import { makeShield, renderCFWText } from "@api";
+
+var readme_frags = frags, shield = makeShield("last_commit");
+
+var logo = renderCFWText( pkg.name.split("/").pop() );
+
+const warning = `<!-- this is a generated document - DO NOT EDIT THIS DOCUMENT - Refer to https://github.com/candlefw/doc/source/doc_fragments/generating_readmes.md -->`;
+
+export default <div>
+
+    ${warning}
+
+    <h1 align=center>
+        <img src=${ logo } alt=${ `${pkg.name} logo` } height=200/>
+    </h1>
+    
+    <h2 align=center>${pkg.description}</h2>
+    
+    <p align=center> <sub><b>v${pkg.version}</b></sub> </p>
+
+    <p align=center> ${shield} </p>
+
+    <container data=${ readme_frags } element=null>
+        <div>
+            <import name="pos" url="@model"/>
+
+            ${"\n\n" + content}
+
+        </div>
+    </container>
+</div>

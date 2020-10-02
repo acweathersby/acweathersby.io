@@ -1,0 +1,20 @@
+{
+  "name": "acweathersby.io",
+  "version": "1.0.0",
+  "description": "My Personal Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/acweathersby/acweathersby.io.git"
+  },
+  "author": "Anthony Weathersby",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/acweathersby/acweathersby.io/issues"
+  },
+  "homepage": "https://github.com/acweathersby/acweathersby.io#readme",
+  "private": "true"
+}
