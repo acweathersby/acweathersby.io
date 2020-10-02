@@ -17,5 +17,12 @@
     "url": "https://github.com/acweathersby/acweathersby.io/issues"
   },
   "homepage": "https://github.com/acweathersby/acweathersby.io#readme",
-  "private": "true"
+  "private": "true",
+  "dependencies": {
+    "@candlefw/wick": "*"
+  },
+  "devDependencies": {
+    "@candlefw/flame": "*",
+    "@candlefw/glow": "*"
+  }
 }
