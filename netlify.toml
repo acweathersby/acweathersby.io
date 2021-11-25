@@ -1,0 +1,10 @@
+##############################
+# Netlify configuration file #
+##############################
+
+[build]
+  base = "/"
+  publish = "www/"
+
+[build.environment]
+NODE_VERSION = "16.8.0"

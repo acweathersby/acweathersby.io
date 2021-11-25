@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="generator" content="@candlelib/wick-0.16.1"> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <style id="wick-boiler-plate">
+        body {
+            position:absolute; top:0;
+            left:0; width:100%;
+            height:100%; padding:0;
+            margin:0; border:none;
+        }
+        li { list-style:none }
+        a { text-decoration:none }
+    </style>
+    <style id="wick-app-style">
+    
+                .WiH4PKCwIcPG6wTo{
+                    display:flex
+                }
+                .Ww6upo5cGLkukilj{
+                    opacity:0;
+                    padding:50px;
+                    transform-origin:top;
+                    perspective:0px
+                }
+                .WwjTs17czdjx7wnS{
+                    position:absolute;
+                    z-index:-1;
+                    opacity:0
+                }
+                
+                .WwjTs17czdjx7wnS canvas{
+                    position:fixed;
+                    top:0;
+                    left:0;
+                    width:100vw;
+                    height:100vh
+                }
+                .Ww9sZ6ikUlkr6i6R{
+                    background-color:#ffffff;
+                    width:150px;
+                    height:100vh;
+                    border-right:1px solid #dddddd
+                }
+    </style>
+
+    <style id="radiate">
+        radiate-modals {
+            position:fixed;
+            top:0;
+            left:0;
+        }
+
+        radiate-modal {
+
+        }
+
+        radiate-modals iframe{
+            border: none;
+            width:100vh;
+            height:100vh;
+        }
+    </style>
+  </head>
+  <body>
+    <script> document.body.hidden = true; </script>
+
+    <div w:u="0" id="app" w:c class="WiH4PKCwIcPG6wTo">
+      <div w:u="1" id="sidebar" radiate_element>
+        <div w:u="0" w:c class="Ww9sZ6ikUlkr6i6R" id="sid" expat="WcwTo4BiKR5cicSr">
+          <div w:u="1" w:ctr="Wwf8rW9wWAIGikMA" w:ctr-atr class=" permanent-links">
+            <a w:u="0" href="/" w:c class="Wwf8rW9wWAIGikMA"><w-b w:u="1">home</w-b>
+            </a>
+            <a w:u="0" href="/blog/" w:c class="Wwf8rW9wWAIGikMA"><w-b w:u="1">blog</w-b>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div w:u="3" id="content" radiate_element>
+        <w-e w:u="4">
+          <div m:d>
+            <h1> Hello World
+            </h1>
+            <p m:d>This is my first post on what will be many posts on this subject
+            </p>
+          </div>
+        </w-e>
+      </div>
+    </div>
+
+    <template w:c id="Wwf8rW9wWAIGikMA">
+      <a w:u="0" w:c class="Wwf8rW9wWAIGikMA"><w-b w:u="1"></w-b>
+      </a>
+    </template>
+    <script type=module id="wick-init-script">
+      
+				import init_router from "/radiate.js";
+				init_router();
+    </script>
+    <script type=module id="wick-component-script">
+      
+    const w = wick;
+
+    await w.appendPresets({"repo":[]});
+
+    
+      w.rt.rC(class WiH4PKCwIcPG6wTo extends w.rt.C{
+      
+          });
+      w.rt.rC(class Ww6upo5cGLkukilj extends w.rt.C{
+      
+          init( c ){
+      
+              c.lookup_function_table = [c.u0];
+      
+              c.nlu = { data:2164260864 };
+      
+              this.ua(0, "");
+          }
+      
+          oTI( row, col, desc, trs ){
+      
+              trs(
+      
+                  { 
+      
+                      obj:this.elu[0][0],
+      
+                      opacity:[{ value:0, dur:0 },{ value:0, dur:200 },{ value:1, dur:400 }],
+      
+                      transform:[{ value:"translateY(80px) rotateX(40deg)", dur:0 },{ 
+      
+                          value:"translateY(0) rotateX(0)",
+      
+                          dur:500,
+      
+                          easing:trs.easing.ease_out
+                       }]
+                   }
+              );
+          }
+      
+          oTO( row, col, desc, trs ){
+      
+              trs(
+      
+                  { 
+      
+                      obj:this.elu[0][0],
+      
+                      opacity:[{ value:1, dur:0 },{ value:0, dur:400 }],
+      
+                      transform:[{ value:"translateY(0) rotateX(0)", dur:500 },{ 
+      
+                          value:"translateY(80px) rotateX(40deg)",
+      
+                          dur:500,
+      
+                          easing:trs.easing.ease_in
+                       }]
+                   }
+              );
+          }
+      });
+      w.rt.rC(class WwjTs17czdjx7wnS extends w.rt.C{
+      
+          async async_init(  ){
+      
+              this[1].width = window.innerWidth;
+      
+              this[1].height = window.innerHeight;
+      
+              this[0].fillRect(0, 0, this[1].width, this[1].height);
+          }
+      
+          init( c ){
+      
+              c.lookup_function_table = [c.u0,c.u1];
+      
+              c.nlu = { ctx:2164260864, cvs:2164260865 };
+      
+              this.ua(0, this.elu[1][0].getContext("2d"));
+      
+              this.ua(1, this.elu[1][0]);
+          }
+      
+          oTI( row, col, desc, trs ){
+      
+              trs(
+      
+                  { 
+      
+                      obj:this.elu[0][0],
+      
+                      opacity:[{ value:0, dur:0 },{ value:0, dur:200 },{ value:1, dur:400 }]
+                   }
+              );
+          }
+      
+          oTO( row, col, desc, trs ){
+      
+              trs(
+      
+                  { 
+      
+                      obj:this.elu[0][0],
+      
+                      opacity:[{ value:1, dur:0 },{ value:0, dur:400 }]
+                   }
+              );
+          }
+      });
+      w.rt.rC(class Ww9sZ6ikUlkr6i6R extends w.rt.C{
+      
+          init( c ){
+      
+              c.lookup_function_table = [c.u0,c.u1];
+      
+              c.nlu = { permanent_links:2701131776, data:2701131777 };
+      
+              this.ua(1, "");
+      
+              this.ua(
+      
+                  0,
+      
+                  [{ name:"home", href:"/" },{ name:"blog", href:"/blog/" }]
+              );
+          }
+      
+          u0( f, c ){this.ctr[0].sd(this[0]);}
+      });
+      w.rt.rC(class Wwf8rW9wWAIGikMA extends w.rt.C{
+      
+          init( c ){
+      
+              c.lookup_function_table = [c.u0,c.u1];
+      
+              c.nlu = { href:3238002688, name:3238002689 };
+          }
+      
+          u0( f, c ){this.sa(0, "href", this.model.href);}
+      
+          u1( f, c ){this.ue(1, this.model.name);}
+      });
+    
+    </script>
+  </body>
+</html>

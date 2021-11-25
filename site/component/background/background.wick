@@ -1,0 +1,44 @@
+
+const ctx = "@ctx2D";
+const cvs = "@canvas";
+
+function onload(){
+    cvs.width = window.innerWidth;
+    cvs.height = window.innerHeight;
+    ctx.fillRect(0,0,cvs.width,cvs.height);
+
+}
+
+function on_transitionIn(row, col, desc, trs){
+    trs({
+        obj:"@root",
+        opacity: [{value:0, dur: 0 }, {value:0, dur: 200 }, {value:1, dur:400}],
+    })
+}
+
+function on_transitionOut(row, col, desc, trs){
+    trs({
+        obj:"@root",
+        opacity: [{value:1, dur:0}, {value:0, dur: 400 }],
+    })
+}
+
+export default <div>
+    <canvas></canvas>
+    <style>
+    root{ 
+        position:absolute;
+        z-index:-1;
+        opacity:0
+    }
+
+    canvas {
+        position:fixed;
+        top:0;
+        left:0;
+        width:100vw;
+        height:100vh;
+    }
+</style>
+</div>;
+

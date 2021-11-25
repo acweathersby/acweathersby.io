@@ -1,0 +1,20 @@
+import "@radiate";
+
+import entries from "./templates/blogstub.index.wick";
+import page from "./templates/page.wick";
+import content from "./templates/content.wick";
+import rh1 from "./component/reveal_h1.wick";
+import rp from "./component/reveal_p.wick";
+
+export default <page>
+    <content>
+        <rh1>Blog</rh1>
+
+        <h1>Posts</h1>
+
+        <container data={entries}>
+            <a href={endpoint}>{title}</a>
+        </container>
+
+    </content>
+</page>;

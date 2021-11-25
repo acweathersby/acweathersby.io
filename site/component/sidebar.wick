@@ -1,0 +1,56 @@
+let data = "";
+
+let permanent_links = [
+    {name:"home", href:"/"},
+    {name:"blog", href:"/blog/"}
+];
+
+
+
+export default <div>
+    <container class=permalinks data={permanent_links}>
+        <a class=permalink {href}>{name}</a>
+    </container>
+</div>;
+
+<style>
+
+    root {
+        font-size:12px;
+        font-family:arial;
+        background-color:white;
+        width:120px;
+        height:100vh;
+        border-right:1px solid #EEE;
+    }
+    .permalink {
+        
+        color:black;
+        text-align:center;
+        font-size:1.1em;
+        padding:20px 0;
+        display:block;
+        position:relative;
+        width:100%;
+    }
+
+    .permalink:hover {
+        background-color:red;
+        color:white;
+        font-weight: 800;
+    }
+
+    .permalinks {
+        opacity:0.2;
+        position:relative;
+        top:calc(50% - 120px);
+        transition: opacity 300ms;
+    }
+
+
+    root:hover .permalinks {
+        opacity:1;
+    }
+
+
+</style>;

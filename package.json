@@ -1,10 +1,10 @@
 {
   "name": "acweathersby.io",
   "version": "1.0.0",
-  "description": "My Personal Website",
+  "description": "Anthony Weathersby's Personal Website of Blah",
   "main": "index.js",
   "scripts": {
-    "build": "echo built",
+    "build": "npx candle.wick compile --output ./www ./site",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,12 +17,8 @@
     "url": "https://github.com/acweathersby/acweathersby.io/issues"
   },
   "homepage": "https://github.com/acweathersby/acweathersby.io#readme",
-  "private": "true",
+  "private": true,
   "dependencies": {
-    "@candlefw/wick": "*"
-  },
-  "devDependencies": {
-    "@candlefw/flame": "*",
-    "@candlefw/glow": "*"
+    "@candlelib/wick": "*"
   }
 }

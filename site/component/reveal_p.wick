@@ -1,0 +1,27 @@
+function on_in(row, col, desc, trs){
+    trs({
+        obj:"@root",
+        opacity: [{value:0, dur: 0 }, {value:0, dur: 200 }, {value:1, dur:600}],
+        transform:[
+            { value:"translateY(200px)", dur:0}, 
+            {value:"translateY(0)", dur:600, easing: trs.easing.ease_out }
+        ]
+    })
+}
+
+function on_out(row, col, desc, trs){
+    trs({
+        obj:"@root",
+        opacity: [{value:1, dur:0}, {value:0, dur: 400 }],
+    })
+}
+
+export default <p></p>;
+
+<style>
+
+root {
+    transform-origin: bottom;
+}
+
+</style>

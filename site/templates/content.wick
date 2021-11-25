@@ -1,0 +1,24 @@
+export default <div class=content slot=content></div>;
+
+<style>
+  
+    root{
+        font-family: "Poppins", Arial, sans-serif;
+        opacity:1;
+        padding:50px;
+        perspective: 0px;
+        max-width: 960px;
+        margin: 0;
+        margin-left:auto;
+        margin-right:auto;
+        overflow:scroll;
+    }
+
+    h1 {
+        position:relative;
+        display:block;
+        font-size:8em;
+        text-align:center;
+    }
+
+</style>

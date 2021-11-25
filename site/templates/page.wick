@@ -1,0 +1,34 @@
+import "@radiate";
+
+
+import background from "../component/background/background.wick";
+import sidebar from "../component/sidebar.wick";
+
+export default <div id="app">
+    <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
+    </head>
+    <slot name=background></slot>
+    <div id="sidebar" radiate_element><sidebar id="sid" /></div>
+    <slot name=content class=content> </slot>
+</div>;
+
+<style>
+    root {  
+        display:flex;
+        position:absolute;
+        top:0;
+        left:0
+
+    }
+
+    .content {
+        padding: 0 50px
+    }
+    
+    p {
+        padding:60px;
+    }
+</style>

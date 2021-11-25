@@ -1,0 +1,43 @@
+
+
+let data = "";
+
+
+function on_transitionIn(row, col, desc, trs){
+    trs({
+        obj:"@root",
+        opacity: [{value:0, dur: 0 }, {value:0, dur: 200 }, {value:1, dur:400}],
+        transform:[
+            { value:"translateY(80px) rotateX(40deg)", dur:0}, 
+            {value:"translateY(0) rotateX(0)", dur:500, easing: trs.easing.ease_out}
+        ]
+    })
+}
+
+function on_transitionOut(row, col, desc, trs){
+    trs({
+        obj:"@root",
+        opacity: [{value:1, dur:0}, {value:0, dur: 400 }],
+        transform:[
+            {value:"translateY(0) rotateX(0)", dur:500, },
+            { value:"translateY(80px) rotateX(40deg)", dur:500, easing: trs.easing.ease_in},
+        ]
+    })
+}
+
+export default <div><md>
+
+# Blog Posts
+
+</md></div>;
+
+<style>
+
+    root{
+        opacity:0;
+        padding:50px;
+        transform-origin:top;
+        perspective: 0px;
+    }
+
+</style>

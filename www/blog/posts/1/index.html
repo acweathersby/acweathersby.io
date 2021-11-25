@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="generator" content="@candlelib/wick-0.16.1"> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect"href="https://fonts.googleapis.com"></link><link rel="preconnect"href="https://fonts.gstatic.com"crossorigin=""></link><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,500&display=swap"rel="stylesheet"></link>
+
+    <style id="wick-boiler-plate">
+        body {
+            position:absolute; top:0;
+            left:0; width:100%;
+            height:100%; padding:0;
+            margin:0; border:none;
+        }
+        li { list-style:none }
+        a { text-decoration:none }
+    </style>
+    <style id="wick-app-style">
+    
+                .WwD1jS9iognQ5cj4{
+                    display:flex;
+                    position:absolute;
+                    top:0;
+                    left:0
+                }
+                
+                .WwD1jS9iognQ5cj4 .content{
+                    padding:0 50px
+                }
+                
+                .WwD1jS9iognQ5cj4 p{
+                    padding:60px
+                }
+                .WiZy4L4iEmbE7co5{
+                    font-family:"Poppins" , Arial , sans-serif;
+                    opacity:1;
+                    padding:50px;
+                    perspective:0px;
+                    max-width:960px;
+                    margin:0;
+                    margin-left:auto;
+                    margin-right:auto;
+                    overflow:scroll
+                }
+                
+                .WiZy4L4iEmbE7co5 h1{
+                    position:relative;
+                    display:block;
+                    font-size:8em;
+                    text-align:center
+                }
+                .WktZc0wkYbP5kk8P{
+                    transform-origin:bottom
+                }
+                .WcMHcWik02aWiwZZ{
+                    transform-origin:bottom
+                }
+                .WwjTs17czdjx7wnS{
+                    position:absolute;
+                    z-index:-1;
+                    opacity:0
+                }
+                
+                .WwjTs17czdjx7wnS canvas{
+                    position:fixed;
+                    top:0;
+                    left:0;
+                    width:100vw;
+                    height:100vh
+                }
+                .WkGXZz9wK34O8wTY{
+                    font-size:12px;
+                    font-family:arial;
+                    background-color:#ffffff;
+                    width:120px;
+                    height:100vh;
+                    border-right:1px solid #eeeeee
+                }
+                
+                .WkGXZz9wK34O8wTY .permalink{
+                    color:#000000;
+                    text-align:center;
+                    font-size:1.1em;
+                    padding:20px 0;
+                    display:block;
+                    position:relative;
+                    width:100%
+                }
+                
+                .WkGXZz9wK34O8wTY .permalink:hover{
+                    background-color:#ff0000;
+                    color:#ffffff;
+                    font-weight:800
+                }
+                
+                .WkGXZz9wK34O8wTY .permalinks{
+                    opacity:0.2;
+                    position:relative;
+                    top:calc(50% - 120px);
+                    transition:opacity 300ms
+                }
+                
+                .WkGXZz9wK34O8wTY:hover .permalinks{
+                    opacity:1
+                }
+    </style>
+
+    <style id="radiate">
+        radiate-modals {
+            position:fixed;
+            top:0;
+            left:0;
+        }
+
+        radiate-modal {
+
+        }
+
+        radiate-modals iframe{
+            border: none;
+            width:100vh;
+            height:100vh;
+        }
+    </style>
+  </head>
+  <body>
+    <script> document.body.hidden = true; </script>
+
+    <div w:u="0" id="app" w:c class="WixuYS4iiHonwk06 WwD1jS9iognQ5cj4" w:own="1" expat="WiyIMOkkyxM4iwib">
+      <slot w:u="1" w:own="1">
+      </slot>
+      <div w:u="2" id="sidebar" radiate_element w:own="1">
+        <div w:u="0" w:c class="WkGXZz9wK34O8wTY" id="sid" expat="WikBPuBkUwv98kpq">
+          <div w:u="1" w:ctr="Wwz3h7kiQVZGcivW" w:ctr-atr class=" permalinks">
+            <a w:u="0" href="/" class="Wwz3h7kiQVZGcivW permalink" w:c><w-b w:u="1">home</w-b>
+            </a>
+            <a w:u="0" href="/blog/" class="Wwz3h7kiQVZGcivW permalink" w:c><w-b w:u="1">blog</w-b>
+            </a>
+          </div>
+        </div>
+      </div>
+      <slot w:u="4" class=" content" w:own="1">
+      </slot>
+      <div w:u="0" class="WixuYS4iiHonwk06 WiZy4L4iEmbE7co5 content" w:c w:own="1" expat="WicT6vAc16sOkiRG">
+        <w-e w:u="2">
+          <div m:d>
+            <h1> Building A Web Library
+            </h1>
+          </div>
+        </w-e>
+      </div>
+    </div>
+
+    <template w:c id="Wwz3h7kiQVZGcivW">
+      <a w:u="0" class="Wwz3h7kiQVZGcivW permalink" w:c><w-b w:u="1"></w-b>
+      </a>
+    </template>
+    <script type=module id="wick-init-script">
+      
+				import init_router from "/radiate.js";
+				init_router();
+    </script>
+    <script type=module id="wick-component-script">
+      
+    const w = wick;
+
+    await w.appendPresets({"repo":[]});
+
+    
+      w.rt.rC(class WixuYS4iiHonwk06 extends w.rt.C{
+      
+          });
+      w.rt.rC(class WwD1jS9iognQ5cj4 extends w.rt.C{
+      
+          });
+      w.rt.rC(class WiZy4L4iEmbE7co5 extends w.rt.C{
+      
+          });
+      w.rt.rC(class WktZc0wkYbP5kk8P extends w.rt.C{
+      
+          oTI( row, col, desc, trs ){
+      
+              trs(
+      
+                  { 
+      
+                      obj:this.elu[0][0],
+      
+                      opacity:[{ value:0, dur:0 },{ value:0, dur:200 },{ value:1, dur:400 }],
+      
+                      transform:[{ value:"translateY(100px) rotateX(-170deg)", dur:0 },{ 
+      
+                          value:"translateY(0) rotateX(0deg)",
+      
+                          dur:600,
+      
+                          easing:trs.easing.ease_out
+                       }]
+                   }
+              );
+          }
+      
+          oTO( row, col, desc, trs ){
+      
+              trs(
+      
+                  { 
+      
+                      obj:this.elu[0][0],
+      
+                      opacity:[{ value:1, dur:0 },{ value:0, dur:400 }],
+      
+                      transform:[{ value:"translateY(0) rotateZ(0)", dur:500 },{ 
+      
+                          value:"translateY(0) rotateZ(1deg)",
+      
+                          dur:500,
+      
+                          easing:trs.easing.ease_in
+                       }]
+                   }
+              );
+          }
+      });
+      w.rt.rC(class WcMHcWik02aWiwZZ extends w.rt.C{
+      
+          oTI( row, col, desc, trs ){
+      
+              trs(
+      
+                  { 
+      
+                      obj:this.elu[0][0],
+      
+                      opacity:[{ value:0, dur:0 },{ value:0, dur:200 },{ value:1, dur:600 }],
+      
+                      transform:[{ value:"translateY(200px)", dur:0 },{ 
+      
+                          value:"translateY(0)",
+      
+                          dur:600,
+      
+                          easing:trs.easing.ease_out
+                       }]
+                   }
+              );
+          }
+      
+          oTO( row, col, desc, trs ){
+      
+              trs(
+      
+                  { 
+      
+                      obj:this.elu[0][0],
+      
+                      opacity:[{ value:1, dur:0 },{ value:0, dur:400 }]
+                   }
+              );
+          }
+      });
+      w.rt.rC(class WwjTs17czdjx7wnS extends w.rt.C{
+      
+          async async_init(  ){
+      
+              this[1].width = window.innerWidth;
+      
+              this[1].height = window.innerHeight;
+      
+              this[0].fillRect(0, 0, this[1].width, this[1].height);
+          }
+      
+          init( c ){
+      
+              c.lookup_function_table = [c.u0,c.u1];
+      
+              c.nlu = { ctx:2164260864, cvs:2164260865 };
+      
+              this.ua(0, this.elu[1][0].getContext("2d"));
+      
+              this.ua(1, this.elu[1][0]);
+          }
+      
+          oTI( row, col, desc, trs ){
+      
+              trs(
+      
+                  { 
+      
+                      obj:this.elu[0][0],
+      
+                      opacity:[{ value:0, dur:0 },{ value:0, dur:200 },{ value:1, dur:400 }]
+                   }
+              );
+          }
+      
+          oTO( row, col, desc, trs ){
+      
+              trs(
+      
+                  { 
+      
+                      obj:this.elu[0][0],
+      
+                      opacity:[{ value:1, dur:0 },{ value:0, dur:400 }]
+                   }
+              );
+          }
+      });
+      w.rt.rC(class WkGXZz9wK34O8wTY extends w.rt.C{
+      
+          init( c ){
+      
+              c.lookup_function_table = [c.u0,c.u1];
+      
+              c.nlu = { permanent_links:2701131776, data:2701131777 };
+      
+              this.ua(1, "");
+      
+              this.ua(
+      
+                  0,
+      
+                  [{ name:"home", href:"/" },{ name:"blog", href:"/blog/" }]
+              );
+          }
+      
+          u0( f, c ){this.ctr[0].sd(this[0]);}
+      });
+      w.rt.rC(class Wwz3h7kiQVZGcivW extends w.rt.C{
+      
+          init( c ){
+      
+              c.lookup_function_table = [c.u0,c.u1];
+      
+              c.nlu = { href:3238002688, name:3238002689 };
+          }
+      
+          u0( f, c ){this.sa(0, "href", this.model.href);}
+      
+          u1( f, c ){this.ue(1, this.model.name);}
+      });
+    
+    </script>
+  </body>
+</html>

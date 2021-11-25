@@ -1,0 +1,30 @@
+import "@radiate";
+import init, {content} from "@template";
+
+init(async (tools)=>{
+    
+    const posts = [];
+
+    let i = 1;
+
+    for await(const file of tools.loadFiles("../posts/")){
+        posts.push({
+            title:"Main Street",
+            content: await tools.parse(file),
+            endpoint:`/blog/posts/${i++}/`
+        })
+    }
+
+    return posts; 
+})
+
+import page from "./page.wick";
+import content from "./content.wick";
+import rh1 from "../component/reveal_h1.wick";
+import rp from "../component/reveal_p.wick";
+
+export default <page>
+    <content>
+        {content}
+    </content>
+</page>;
